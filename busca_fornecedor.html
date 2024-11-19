@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" id="buscafornecedor">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <title>Busca Fornecedor | Kolekcja</title>
+</head>
+<body>
+  <main>
+  <header>
+    <a href="interface_busca.html">
+      <img src="imagens/logo branca.png" alt="">
+    </a>
+  </header>
+
+    <h1 class="tituloh1f">Consulta de Fornecedor</h1>
+
+    <div class="box_formforn">
+      <form class="buscar_fornecedor">
+        <label for="nomeFornecedorX">Nome da Empresa:</label>
+        <input type="text" id="nomeFornecedorX" name="nomeFornecedorX"><br><br> 
+
+        <label for="CNPJX">CNPJ:</label>
+        <input type="number" id="CNPJX" name="CNPJX"><br><br>
+
+        <label for="telFornecedorX">Telefone do fornecedor:</label>
+        <input type="text" id="telFornecedorX" name="telefone_do_fornecedorX"><br><br>
+
+        <label for="emailFornecedorX">Email do fornecedor:</label>
+        <input type="text" id="emailFornecedorX" name="email_do_fornecedorX"><br><br>
+
+        <label for="razaoSocialX">Razão Social:</label>
+        <input type="number" id="razaoSocialX" name="razao_socialX"><br><br>
+
+        <button class="button" onclick="buscarfornecedor()">Buscar</button>
+      </form>
+    </div>
+    <br>
+  
+    
+  <div class="box_tabbusforn">
+    <table id="resultadoConsultaForn">
+      <thead>
+          <tr>
+              <th>Nome</th> 
+              <th>CNPJ</th> 
+              <th>Tel. Fornecedor</th> 
+              <th>Email fornecedor</th> 
+              <th>Razão social</th>
+          </tr>
+      </thead>
+      <tbody>
+          <!-- Resultados serão inseridos aqui -->
+      </tbody>
+    </table>
+  </div>
+  
+  
+  </main>
+  <script src="cadastro.js"> </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" id="buscavendas">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <title>Busca Venda | Kolekcja</title>
+</head>
+<body>
+  <main>
+  <header>
+    <button>
+      <ion-icon name="arrow-back-outline" class="seta"></ion-icon>
+    </button>
+    <a href="interface_busca.html">
+      <img src="imagens/logo branca.png" alt="">
+    </a>
+  </header>
+
+  <div  class="tituloven">
+    <h1>Consulta de Vendas</h1>
+  </div>
+
+    <div class="box_formvendas">
+      <form class="buscar_vendas">
+        <label for="nomeProdutoX">Nome do Produto:</label>
+        <input type="text" id="nomeProdutoX" name="nomeProdutoX"><br><br> 
+
+        <label for="CPF_cliX">CPF cliente:</label>
+        <input type="number" id="CPF_cliX" name="CPF_cienteX"><br><br>
+
+        <label for="codigo_proX">Codigo produto:</label>
+        <input type="text" id="codigo_proX" name="codigo_produtoX"><br><br>
+
+        <label for="Data_envioX">Data de envio:</label>
+        <input type="text" id="Data_envioX" name="Data_envioX"><br><br>
+
+        <label for="Est_entregaX">Estimativa da entrega:</label>
+        <input type="number" id="Est_entregaX" name="estimativa_entregaX"><br><br>
+
+        <label for="custo_entregaX">Custo da entrega:</label>
+        <input type="text" name="custo_entregaX" id="custo_entregaX"> <br><br>
+
+        <button onclick="buscarvendas()" class="button">Buscar</button>
+      </form>
+    </div>
+    <br>
+
+
+    <div class="box_tabbusvend">
+      <table id="resultadoConsultaVenda">
+        <thead>
+            <tr>
+                <th>Nome</th> 
+                <th>CPF</th> 
+                <th>Codigo Produto</th> 
+                <th>Data de envio</th> 
+                <th>Estimativa da entrega</th>
+                <th>Custo entrega</th> 
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Resultados serão inseridos aqui -->
+        </tbody>
+      </table>
+    </div>
+    
+    
+  </main>
+  <script src="cadastro.js"> </script>
+</body>
+</html>
+
